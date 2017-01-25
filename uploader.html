@@ -52,7 +52,7 @@
     var storageRef = firebase.storage().ref('photos/' + file.name);
     
     // Upload file
-    var task = storageRef.put('file')
+    var task = storageRef.put('file');
     
     // Update progress bar
     task.on('state_changed', 
